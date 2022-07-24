@@ -1,7 +1,7 @@
 # Choice Rules and Constraints - Simple Progamming Assignment
 #### This assignment was completed using [Clingo](https://github.com/potassco/guide/releases/download/v2.2.0/guide.pdf), which I installed on my local machine. You may also use the online version of Clingo, but it will not include the command line.
 
-#### A walkthrough for each problem is provided as a comment header in the input program file '''Assignment1.lp'''. 
+#### A walkthrough for each problem is provided as a comment header in the input program file __Assignment1.lp__. 
 
 ## Assignment Problems and Instructions
 
