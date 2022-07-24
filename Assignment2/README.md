@@ -16,9 +16,8 @@
 
 ### Problem 1
 #### Modify the file blocks.lp to reflect the assumption that the table is small, so that the number of blocks that can be placed on the table simultaneously is limited by a given constant. How many steps are required to solve the example problem above if only 4 blocks can be on the table at the same time? What if only 3? You may test your codes with a scenario, which is also represented by a clingo program such as blocks-scenario.lp below.
-`
-<pre><code>
-%%%%%%%%%%%%%%%%%%%
+
+<pre><code>%%%%%%%%%%%%%%%%%%%
 % File: blocks-scenario.lp
 %%%%%%%%%%%%%%%%%%%
 block(1..6).
@@ -37,9 +36,7 @@ block(1..6).
 ### Problem 3
 #### A serializable plan is such that the actions that are scheduled for the same time period can be instead executed consecutively, in any order without affecting the result.
 #### Modify `blocks.lp` to generate only serializable plans. Find a minimal length plan for the following scenario. (Hint: you need to modify blocks-scenario.lp to reflect this new scenario.)
-<pre><code>
-
-Initially:
+<pre><code> Initially:
 loc(m)=table, loc(l)=m, loc(a)=l, loc(b)=a, loc(c)=b,
 loc(o)=table, loc(n)=o, loc(d)=n, loc(e)=d, loc(j)=e,
 loc(k)=j, loc(f)=table, loc(g)=f, loc(h)=g, loc(i)=h
