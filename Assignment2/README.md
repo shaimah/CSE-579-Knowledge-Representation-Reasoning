@@ -37,7 +37,8 @@ block(1..6).
 ### Problem 3
 #### A serializable plan is such that the actions that are scheduled for the same time period can be instead executed consecutively, in any order without affecting the result.
 #### Modify `blocks.lp` to generate only serializable plans. Find a minimal length plan for the following scenario. (Hint: you need to modify blocks-scenario.lp to reflect this new scenario.)
-`
+<pre><code>
+
 Initially:
 loc(m)=table, loc(l)=m, loc(a)=l, loc(b)=a, loc(c)=b,
 loc(o)=table, loc(n)=o, loc(d)=n, loc(e)=d, loc(j)=e,
@@ -46,6 +47,6 @@ In maxstep:
 loc(e)=j, loc(a)= e, loc(n)=a, loc(i)=d, loc(h)=i,
 loc(m)=h, loc(o)= m, loc(k)=g, loc(c)=k, loc(b)=c,
 loc(l)=b.
-`
+</code></pre>
 ### Problem 4
 #### A minimal length plan is not necessarily optimal. Modify the program done for Problem 3 to find a plan that has the least number of actions. What is that number when maxstep m is 8, 9, and 10?
