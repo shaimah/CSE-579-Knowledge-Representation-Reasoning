@@ -36,7 +36,7 @@ block(1..6).
 ### Problem 3
 #### A serializable plan is such that the actions that are scheduled for the same time period can be instead executed consecutively, in any order without affecting the result.
 #### Modify `blocks.lp` to generate only serializable plans. Find a minimal length plan for the following scenario. (Hint: you need to modify blocks-scenario.lp to reflect this new scenario.)
-<pre><code> Initially:
+<pre><code>Initially:
 loc(m)=table, loc(l)=m, loc(a)=l, loc(b)=a, loc(c)=b,
 loc(o)=table, loc(n)=o, loc(d)=n, loc(e)=d, loc(j)=e,
 loc(k)=j, loc(f)=table, loc(g)=f, loc(h)=g, loc(i)=h
