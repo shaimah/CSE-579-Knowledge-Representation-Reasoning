@@ -15,7 +15,7 @@
 
 ### P5. Use clingo to find all solutions to an Anti-Knight Sudoku problem.
 
-### P6. Use clingo to find all solutions to the Greater-Thank Sudoku problem. <br/><br/> hi
+### P6. Use clingo to find all solutions to the Greater-Thank Sudoku problem. 
 
 ## Additional Practice Problems (Not included in the input file)
 
