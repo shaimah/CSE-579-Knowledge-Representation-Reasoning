@@ -22,6 +22,7 @@
 &lt;li&gt;Line 2&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
+`
 % File: blocks-scenario.lp 
 %%%%%%%%%%%%%%%%%%%
 block(1..6). 
