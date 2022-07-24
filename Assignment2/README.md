@@ -17,21 +17,17 @@
 ### Problem 1
 #### Modify the file blocks.lp to reflect the assumption that the table is small, so that the number of blocks that can be placed on the table simultaneously is limited by a given constant. How many steps are required to solve the example problem above if only 4 blocks can be on the table at the same time? What if only 3? You may test your codes with a scenario, which is also represented by a clingo program such as blocks-scenario.lp below.
 `
-<pre><code>%%%%%%%%%%%%%%%%%%%;
-&lt;li&gt;Line 1&lt;/li&gt;
-&lt;li&gt;Line 2&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-`
-% File: blocks-scenario.lp 
+<pre><code>
 %%%%%%%%%%%%%%%%%%%
-block(1..6). 
-% initial state 
-:- not on(1,2,0; 2,table,0; 3,4,0; 4,table,0; 5,6,0; 6,table,0). 
-% goal 
-:- not on(3,2,m; 2,1,m; 1,table,m; 6,5,m; 5,4,m; 4,table,m). 
-</ul>
-`
+% File: blocks-scenario.lp
+%%%%%%%%%%%%%%%%%%%
+block(1..6).
+% initial state
+:- not on(1,2,0; 2,table,0; 3,4,0; 4,table,0; 5,6,0; 6,table,0).
+% goal
+:- not on(3,2,m; 2,1,m; 1,table,m; 6,5,m; 5,4,m; 4,table,m).
+</code></pre>
+
 
 ### Problem 2
 #### The file `blocks.lp` specifies that the initial state correctly. Without the specification, there will be stable models that do not correspond to valid states, like the following. 
