@@ -17,9 +17,11 @@
 ### Problem 1
 #### Modify the file blocks.lp to reflect the assumption that the table is small, so that the number of blocks that can be placed on the table simultaneously is limited by a given constant. How many steps are required to solve the example problem above if only 4 blocks can be on the table at the same time? What if only 3? You may test your codes with a scenario, which is also represented by a clingo program such as blocks-scenario.lp below.
 `
-<ul>
-
-<li>%%%%%%%%%%%%%%%%%%% </li>
+<pre><code>%%%%%%%%%%%%%%%%%%%;
+&lt;li&gt;Line 1&lt;/li&gt;
+&lt;li&gt;Line 2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
 % File: blocks-scenario.lp 
 %%%%%%%%%%%%%%%%%%%
 block(1..6). 
