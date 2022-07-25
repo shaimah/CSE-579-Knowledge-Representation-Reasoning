@@ -15,27 +15,17 @@
 ## Assignment Problems and Instructions
 
 ### Problem 1
-#### Modify the file blocks.lp to reflect the assumption that the table is small, so that the number of blocks that can be placed on the table simultaneously is limited by a given constant. How many steps are required to solve the example problem above if only 4 blocks can be on the table at the same time? What if only 3? You may test your codes with a scenario, which is also represented by a clingo program such as blocks-scenario.lp below.
-
-<pre><code>%%%%%%%%%%%%%%%%%%%
-% File: blocks-scenario.lp
-%%%%%%%%%%%%%%%%%%%
-block(1..6).
-% initial state
-:- not on(1,2,0; 2,table,0; 3,4,0; 4,table,0; 5,6,0; 6,table,0).
-% goal
-:- not on(3,2,m; 2,1,m; 1,table,m; 6,5,m; 5,4,m; 4,table,m).
-</code></pre>
+#### Write a program to reflect the assumption that the table is small, so that the number of blocks that can be placed on the table simultaneously is limited by a given constant. How many steps are required to solve the example problem above if only 4 blocks can be on the table at the same time? What if only 3? You may test your codes with a scenario, which is also represented by a clingo program in the `blocks-scenario.lp` file.
 
 
 ### Problem 2
-#### The file `blocks.lp` specifies that the initial state correctly. Without the specification, there will be stable models that do not correspond to valid states, like the following. 
+#### The `blocks-scenario.lp` already specifies that the initial state correctly. Without the specification, there will be stable models that do not correspond to valid states, like the following. 
 #### non(1,2,0) on(2,1,0) on(3,3,0) on(4,table,0) on(5,6,0) on(6,table,0)
 #### Modify the file blocks.lp so that the stable models are in a 1-1 correspondence with valid states.
 
 ### Problem 3
 #### A serializable plan is such that the actions that are scheduled for the same time period can be instead executed consecutively, in any order without affecting the result.
-#### Modify `blocks.lp` to generate only serializable plans. Find a minimal length plan for the following scenario. (Hint: you need to modify blocks-scenario.lp to reflect this new scenario.)
+#### Modify `blocks.lp` to generate only serializable plans. Find a minimal length plan for the following scenario. You can just just the 'blocks-scenario.lp` file which reflects the initial state below.
 <pre><code>Initially:
 loc(m)=table, loc(l)=m, loc(a)=l, loc(b)=a, loc(c)=b,
 loc(o)=table, loc(n)=o, loc(d)=n, loc(e)=d, loc(j)=e,
